@@ -1,5 +1,5 @@
 <h1>Hey, I'm AERAF! </h1> <p align="center">
-  <img src="PASTE_GIF_LINK_HERE" width="400" alt="Cybersecurity GIF">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Y3Zm96YTN6cmZ6eXRwa2x1aHB5MmM2NzhjZTdxMW5rbG84czZjaSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/P8ef3Dkynk0xLx1h1T/giphy.gif" width="400" alt="Cybersecurity GIF">
 </p>
 
 <b> <h1> ✨About me </h1> </b>
