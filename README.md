@@ -28,3 +28,30 @@ Welcome to my GitHub! I'm diving into cybersecurity,defene team and digital fore
 [![](https://komarev.com/ghpvc/?username=AERAFROUF&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+name: Generate Contribution Gravity
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  gravity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: flycran/github-gravity@v1
+        with:
+          username: flycran
+          text: GitHub Gravity
+          output-path: deploy/gravity.svg
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy
+          publish_branch: output
+          keep_files: false
+          force_orphan: true
